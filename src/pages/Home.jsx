@@ -1,7 +1,15 @@
-const dummyData = Array.from({ length: 100 })
+import Box from '@mui/material/Box'
+import Divider from '@mui/material/Divider'
+// import FilterButtons from '../components/home/FilterButtons'
+import MovieList from '../components/home/MovieList'
 
 export default function Home() {
-  return dummyData.map((item) => (
-    <p key={item}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, debitis.</p>
-  ))
+  return (
+    <>
+      <Box>
+        <MovieList />
+      </Box>
+      <Divider />
+    </>
+  )
 }
